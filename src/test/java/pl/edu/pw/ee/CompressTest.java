@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CompressTest {
     private Huffman huffman;
-    private static final String PATH_TO_ROOT_DIR = "src/main/resources";
+    private static final String PATH_TO_ROOT_DIR = "src/test/resources";
     private static final String INPUT_FILE = "input_file.txt";
     private static final String INPUT_FILE_PATH = PATH_TO_ROOT_DIR + File.separator + INPUT_FILE;
     private static final String COMPRESSED_DIR_PATH = PATH_TO_ROOT_DIR + "/input_file_compressed";

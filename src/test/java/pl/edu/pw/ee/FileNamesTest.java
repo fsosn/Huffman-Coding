@@ -32,7 +32,7 @@ public class FileNamesTest {
     @Test(expected = IllegalArgumentException.class)
     public void shouldThrowExceptionWhenPathToFileDoesNotExist() {
         //given
-        String invalidPathToFile = "src/main/resources/doesnotexist.txt";
+        String invalidPathToFile = "src/test/resources/doesnotexist.txt";
 
         //when
         FileNames.checkPathToFile(invalidPathToFile);
@@ -80,7 +80,7 @@ public class FileNamesTest {
     @Test(expected = IllegalArgumentException.class)
     public void shouldThrowExceptionWhenPathToDirIsNotDir() {
         //given
-        String invalidPathString = "src/main/resources" + INPUT_FILE;
+        String invalidPathString = "src/test/resources" + INPUT_FILE;
 
         //when
         FileNames.checkPathToDirectory(invalidPathString);

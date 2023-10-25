@@ -12,8 +12,7 @@ import static java.util.logging.Level.SEVERE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DecompressTest {
-    private Huffman huffman;
-    private static final String PATH_TO_ROOT_DIR = "src/main/resources";
+    private static final String PATH_TO_ROOT_DIR = "src/test/resources";
     private static final Logger LOG = Logger.getLogger(DecompressTest.class.getName());
 
     private static final String COMPRESSED_DIR_PATH = PATH_TO_ROOT_DIR + "/input_file_compressed/";
@@ -23,7 +22,7 @@ public class DecompressTest {
     @Test
     public void shouldReturnCorrectNumOfCharsWhenDecompress() {
         //given
-        huffman = new Huffman();
+        Huffman huffman = new Huffman();
         int expectedNumOfChars = countAllCharsInInputFile();
 
         //when
