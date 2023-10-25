@@ -118,7 +118,7 @@ public class Decompress {
         String filePath = this.pathToDir + FileNames.COMPRESSED_FILE;
         FileNames.checkPathToFile(filePath);
 
-        BitSet bitSet = new BitSet();
+        BitSet bitSet;
         try {
             byte[] byteArray = Files.readAllBytes(Paths.get(filePath));
             bitSet = BitSet.valueOf(byteArray);
