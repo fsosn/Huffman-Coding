@@ -1,7 +1,6 @@
 # Huffman-Coding
 ## Introduction
-This Java project contains implements Huffman coding, which is a lossless data compression algorithm.<br>
-It can be used to either compress a text file or decompress a directory with compressed contents, that were created during a compression performed earlier.
+This Java project contains implements Huffman coding, which is a lossless data compression algorithm. It can be used to either compress a text file or decompress a directory with compressed contents, that were created during a compression performed earlier.
 The project includes a Swing graphical user interface (GUI) and also it can be run from command-line interface (CLI).
 ## Getting started
 1. **Clone the Repository:**
